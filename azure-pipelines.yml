@@ -27,7 +27,7 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/apis/userprofile/Dockerfile'
         tags: |
           $(tag)
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    customCommand: 'run test'
+    - task: Npm@1
+      inputs:
+      command: 'custom'
+      customCommand: 'run test'
