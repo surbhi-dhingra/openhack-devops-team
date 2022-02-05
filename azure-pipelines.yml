@@ -30,4 +30,4 @@ stages:
     - task: Npm@1
       inputs:
       command: 'custom'
-      customCommand: 'run test'
+      customCommand: 'npm run test'
