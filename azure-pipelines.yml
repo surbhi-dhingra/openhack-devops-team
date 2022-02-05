@@ -29,5 +29,5 @@ stages:
           $(tag)
     - task: Npm@1
       inputs:
-      command: 'custom'
-      customCommand: 'npm run test'
+        command: 'custom'
+        customCommand: 'npm run test'
